@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webDev
+    </title>
+   <!-- How to include external class -->
+    <link rel="stylesheet" href="harry.css">
+    <!-- How to include external javascript -->
+    <script src="harry.js"></script>
+</head>
+<body>
+    heyyy!!!!
+    whatsup guysss......
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <!--<p>paragraph</p> -->
+   <!-- to display words in horizontal line setting-command pallet-toggle word wrap or alt + z-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing <strong>we use this to bold the text</strong> Atque, praesentium.</p> <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia veniam asperiores veritatis
+         <em>we use this to italic the text (em= emphesized) </em> porro ut voluptas maiores, laudantium nemo dolores similique facere <br> quidem nihil placeat quis distinctio<br><br><br><br> provident et eius.</p>
+         <!-- ctrl + enter to jump a new line -->
+         <!--lorem for dummy text-->
+    <i>italic</i> <br>
+    <b>bold</b> <br>
+    <a href="https://google.com"> go to google</a>
+    <a href="https://google.com" target="blank">go to google</a>
+    <!-- in img tag if image is not shown hence alt will bw displayed -->
+    <img src="profile (1).jpg" alt="error img">
+       
+    <!-- ul= unordered list -->
+    <ul type="square">
+        <li>this is my list</li>
+        <li>this is my list</li>
+        <li>this is my list</li></ul>
+        <ul><li>this is my list</li>
+            <li>this is my list</li>
+            <li>this is my list</li></ul>
+        
+            <!-- ol= ordered list -->
+            <ol type="A">
+                <li>this is my list</li>
+                <li>this is my list</li>
+                <li>this is my list</li></ol>
+        <ol><li>this is my list</li>
+            <li>this is my list</li>
+            <li>this is my list</li></ol>
+
+
+            <table>
+                <thead>
+                    <th>name</th>
+                    <th>employee id</th>
+                    <th>work</th>
+                </thead>
+                <tbody>
+                   <tr>
+                     <td>prem</td>
+                    <td>120</td>
+                    <td>html</td> 
+                </tr>
+                <tr>
+                    <td>shivam</td>
+                    <td>108</td>
+                    <td>fekna</td>
+                </tr>
+                <tr>
+                    <td>putrum</td>
+                    <td>113</td>
+                    <td>useless</td>
+                </tr>
+                </tbody>
+            </table>
+
+<!--form-->
+            <h2>how to add form in html</h2>
+            <form action="backend.php">
+                
+              <!--label is used for when we click on text thn the cursor will automatically be there in field-->
+                <label for="name">name
+                    <div> 
+                        Name: <input type="text" name="MyName">
+                    </div>
+                  <br>
+                <div> 
+                    <input type="text" name="MyName" id="name">
+                </div>
+              <br>
+                <div> 
+                    Role: <input type="text" name="myRole">
+                </div>
+                <br>
+                <div> 
+                    Email: <input type="email" name="myemail">
+                </div>
+                <br>
+                <br>
+                <!--date    -->
+                <div> 
+                    date: <input type="date" name="DATE">
+                </div>
+                <!--Number   -->
+                <br>
+                <div> 
+                    number: <input type="number" name="myNumber">
+                </div>
+                <!--checkbox-->
+                <br>
+                <div> 
+                    checkbox: <input type="checkbox" name="mycheckbox">
+                </div>
+                <!--radiobutton-->
+                <br>
+                <div> 
+                    gender: male<input type="radio" name="radiobutton"> female<input type="radio" name="radiobutton">
+                </div>
+                <!--Text area-->
+                <br>
+                <div> 
+                   write a text <br> <textarea name="text"  cols="30" rows="10"></textarea>
+                </div>
+                <!--List-->
+                <br>
+                <div> 
+                  <label for="car">mycar</label>
+                  <select name="mycar" id="car">
+                    <option value="lambo">lamborgini</option>
+                    <option value="rolls">rolls royce</option>
+                  </select>
+                </div>
+                <br> 
+                <!--button-->
+                <div> 
+                     <input type="submit" value="submit">
+                     <input type="reset" value="reset">
+                </div>
+            </label>
+            </form>
+            
+            <!-- inline and block elements -->
+
+            <!-- inline element is like <p></p> tag but it consume all the space in a line where <span></span> doesnt consume all the space in a line -->
+             <p>Lorem ipsum dolor sit.</p> <p>Lorem ipsum dolor sit.</p>
+             <span> Lorem ipsum dolor sit.</span><span>Lorem ipsum dolor sit.</span>
+             <br>
+              <!-- to use border in a line paragraph or span -->
+              <span style="border: 2px solid red;">prem</span><span style="border: 2px solid blue;">nigam</span>
+              <p style="border:2px solid red">prem</p> <p style="border:2px solid blue">prem</p>
+
+
+              <!-- Emmet -->
+           <!-- Emmet  takes div tag as default-->
+           <div class="sapnclass">.sapnclass</div>
+           <div id="sapnid">#sapnid</div>
+           <!-- . is for class and # is for id  -->
+           <span class="spanclass">span.spanclass</span>
+           <span id="spanid">span#spanid</span>
+
+          
+           <p> this is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paragraph</p>  <!-- this &nbsp; is non breaking space used to put more space in our sentence -->
+          
+            <!-- html entities -->
+            <!-- to show your HTML tag on your site use below entities -->
+            <p> paragragh &lt;p&gt; tag is written like this</p>
+            <p> pound &pound symbol is written like this</p>
+            <p> copy right &copy; symbol is written like this</p>
+            <p> empty character  &#8203 is written like this</p>
+
+            <!-- semantic tags -->
+            <article>
+                <aside>
+                <details>
+                <figcaption>
+                <figure>
+                <footer>
+                <header>
+                <main>
+                <mark>
+                <nav>
+                <section>
+                <summary>
+                <time>
+
+
+
+
+
+
+        </body>
+        </html>

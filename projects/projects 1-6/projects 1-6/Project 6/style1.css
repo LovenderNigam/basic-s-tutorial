@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.main-div{
+    
+    background-image: url("images/backcover.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img{
+    margin-left: 150px;
+}
+.nav-items{
+    display: flex;
+    margin-right: 3px;
+    font-size: 20px;
+    font-family: "Roboto";
+    color:#283179 ;
+}
+.nav-item{
+    margin: 15px;
+}
+.signin-btn{
+    color: white;
+    background-color: #965cf2;
+    border-radius: 30px;
+    padding: 20px;
+    border: 0px;
+    width: 180px;
+    font-size: 20px ;
+    margin-right: 130px;
+    margin-top: 5px;
+}
+.intro-section{
+    margin-top: 150px;
+}
+.left-section{
+    margin-left: 100px;
+}
+h1{
+    color: #3e4794;
+    font-size: 100px;
+    font-family: "Roboto";
+}
+h4{    
+    color: #bcbecc;
+    margin-top: 70px;
+}
+.learn-more-btn{
+    color: white;
+    margin-top: 90px;
+    border-radius: 30px;
+    padding: 20px;
+    border: 0px;
+    width: 180px;
+    font-size: 20px ;
+    background-color: #c972e7;
+}
+.imgs-div{
+    margin-left: 550px;
+    position: relative;
+    bottom: 580px;
+}
+.vector-img{
+    margin-bottom: 200px;
+    position: relative;
+    left: 30px;    
+}
+.vector-dot{
+    margin-bottom: 300px;
+    position: relative;
+    left: 8px; 
+}
+div img{
+   position: relative;
+   right: 65px;
+}

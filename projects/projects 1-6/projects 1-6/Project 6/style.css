@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+.main-div{
+    background-image: url("images/backcover.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+nav{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    margin-right: 20px;
+}
+.nav-item{
+    margin-left: 50px
+}
+.left-section{
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+h1{
+    font-family: "Roboto";
+    font-size: 80px;
+}
+h4{
+    position:relative;
+    top: 100px;
+}
+.learn-more-btn{
+    position: relative;
+    top: 150px;
+    padding: 30px;
+    border-radius: 30px;
+    border: 0px;
+
+}
+.imgs-div{
+    position: relative;
+    left: 500px;
+    bottom: 230px;
+}
+.vector-img{
+    position: relative;
+    bottom: 230px;
+    left: 60px;
+}
+.vector-dot{
+    position: relative;
+    bottom: 300px;
+    left: 10px;
+}

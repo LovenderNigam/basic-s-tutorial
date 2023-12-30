@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition form</title>
+
+</head>
+<body>
+    <form>
+  <label for="fruits">Choose a fruit:</label>
+  <select id="fruits" name="fruits" onchange="updateOptions()">
+    <option value="apple">Apple</option>
+    <option value="orange">Orange</option>
+    <option value="banana">Banana</option>
+    <option value="grape">Grape</option>
+  </select>
+  <label for="varieties">Varieties:</label>
+  <select id="varieties" name="varieties">
+    <option value="fuji" data-fruit="apple">Fuji</option>
+    <option value="granny-smith" data-fruit="apple">Granny Smith</option>
+    <option value="navel" data-fruit="orange">Navel</option>
+    <option value="valencia" data-fruit="orange">Valencia</option>
+    <option value="cavendish" data-fruit="banana">Cavendish</option>
+    <option value="red-globe" data-fruit="grape">Red Globe</option>
+    <option value="thompson" data-fruit="grape">Thompson</option>
+  </select>
+</form>
+<script>
+    function updateOptions() {
+  var fruitSelect = document.getElementById("fruits");
+  var varietySelect = document.getElementById("varieties");
+  var selectedFruit = fruitSelect.value;
+  for (var i = 0; i < varietySelect.options.length; i++) {
+    var option = varietySelect.options[i];
+    if (option.getAttribute("data-fruit") === selectedFruit) {
+      option.style.display = "block";
+    } else {
+      option.style.display = "none";
+    }
+  }
+}
+
+</script>
+</body>
+</html>
